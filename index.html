@@ -4,66 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/png" href="images/logo.png">
-    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Furniture Store</title>
 </head>
 
 <body>
-    <div class="container">
-
-    <!-- SCREEN 1 -->
-    <section class="screen">
-
-      <div class="images">
-        <img class="image-small" src="images/slide-img-3.jpg" alt="First picture"  >
-        <img  class="image-large" src="images/slide-img-4.jpg"  alt="Second picture" >  
-      </div>
-      <div class="text">
-        <div>
-          <h1>Your Title</h1>
-          <p>
-            This is the text section below the two pictures.
-          </p>
+    <!-- Top Header Bar -->
+    <div class="top-bar">
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
-      </div>
-
-    </section>
-
-    <!-- SCREEN 2 -->
-    <section class="screen">
-
-      <div class="images">
-        <img
-          class="image-small"
-          src=".jpg"
-          alt="Third picture"
-        >
-
-        <img
-          class="image-large"
-          src="picture4.jpg"
-          alt="Fourth picture"
-        >
-      </div>
-
-      <div class="text">
-        <div>
-          <h1>Second Section</h1>
-          <p>
-            More content goes here.
-          </p>
+        <div class="user-actions">
+            <a href="#"><i class="fas fa-sign-in-alt"></i> Sign Up / Log In</a>
+            <a href="#"><i class="fas fa-shopping-cart"></i> Cart(2 Items)</a>
+            <a href="#"><i class="fas fa-truck"></i> Order Now</a>
+            <a href="#"><i class="fas fa-heart"></i> Wish List</a>
         </div>
-      </div>
+    </div>
 
-    </section>
+    <!-- Search Input Bar -->
+    <div class="search-bar-container">
+        <div class="search-box">
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
 
-  </div>
+    <!-- Main Navigation -->
+    <nav>
+        <div class="nav-item furniture-menu active-tab">
+            <a href="#" class="nav-link main-active">FURNITURE</a>
 
+            <div class="mega-menu">
+                <div class="menu-column">
+                    <a href="#">SOFAS</a>
+                    <a href="#">SECTIONALS</a>
+                    <a href="#">DAYBEDS & CHAISES</a>
+                    <a href="#">CONSOLES & CREDENZAS</a>
+                    <a href="#">CHAIRS</a>
+                    <a href="#">BENCHES & OTTOMANS</a>
+                    <a href="#">DRESSERS & CHESTS</a>
+                    <a href="#">DINING TABLES</a>
+                </div>
 
-    
+                <div class="menu-column">
+                    <a href="#">LAMPERT</a>
+                    <a href="#">BAXTER</a>
+                    <a href="#">CHANNING</a>
+                    <a href="#">MAXIME</a>
+                    <a href="#">TALITHA</a>
+                    <a href="#">RIDER</a>
+                    <a href="#">GOLDFINGER</a>
+                </div>
+
+                <div class="menu-image">
+                    <img src="images/slide-img-2.jpg" alt="Furniture Frame">
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="nav-link">ROOMS</a>
+        <a href="#" class="nav-link">KITCHEN</a>
+        <a href="#" class="nav-link">OUTDOOR</a>
+        <a href="#" class="nav-link">LIGHTING</a>
+        <a href="#" class="nav-link">BED & BATH</a>
+        <a href="#" class="nav-link">WINDOW</a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="slider">
+                <div class="slide"><img src="images/slide-img-1.jpg" alt="Furniture"></div>
+                <div class="slide"><img src="images/slide-img-2.jpg" alt="Furniture"></div>
+                <div class="slide"><img src="images/slide-img-3.jpg" alt="Furniture"></div>
+                <div class="slide"><img src="images/slide-img-4.jpg" alt="Furniture"></div>
+            </div>
+
+            <div class="sale-content">
+                <h1>GREAT SALE</h1>
+                <button class="shop-btn">Shop Now</button>
+            </div>
+
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <section class="day-offer">
+            <div class="day-offer-left"></div>
+            <h2>Day Offer</h2>
+        </section>
+    </main>
 </body>
 
 </html>
